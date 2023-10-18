@@ -8,6 +8,12 @@ $enable-transitions: true !default;
 $enable-grid-classes: true !default;
 $enable-print-styles: true !default;
 
+// Color system -Own
+$font-primary: #3a3a3a !default;
+
+$bg-secondary: #3a3a3a !default;
+
+$light-grey: #e1e1e1 !default;
 // Color system
 
 $white: #ffffff !default;
@@ -94,7 +100,7 @@ $colors: map-merge(
 $default-color-opacity: rgba(182, 182, 182, 0.6) !default;
 $orange-color: #f96332 !default;
 
-$default: #344675 !default;
+$default: #d1d1d1 !default;
 $primary: #e14eca !default;
 $secondary: #f4f5f7 !default;
 $success: #00f2c3 !default;
@@ -104,7 +110,7 @@ $danger: #fd5d93 !default;
 $black: #222a42 !default;
 
 // gradient
-$default-states: #263148 !default;
+$default-states: #d1d1d1 !default;
 $primary-states: #ba54f5 !default;
 $success-states: #0098f0 !default;
 $info-states: #3358f4 !default;
@@ -112,7 +118,7 @@ $warning-states: #ff6491 !default;
 $danger-states: #ec250d !default;
 $black-states: #1d253b !default;
 
-$background-black: #171941 !default;
+$background-black: #e9e9e9 !default;
 $background-states-black: #1e1e24 !default;
 
 // opacity
@@ -354,7 +360,7 @@ $border-color: $gray-200 !default;
 
 $border-radius: 0.25rem !default;
 $border-radius-xl: 0.875rem !default;
-$border-radius-lg: 0.4285rem !default;
+$border-radius-lg: 0.2rem !default;
 $border-radius-sm: 0.2857rem !default;
 $border-radius-xs: 0.1428rem !default;
 

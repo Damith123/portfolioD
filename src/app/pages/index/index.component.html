@@ -10,9 +10,12 @@
         placement="bottom"
         [routerLink]="['/home']"
         target="_blank"
-        tooltip="Designed and Coded by Creative Tim"
       >
-        <span> BLK• </span> Design System Angular
+        <img        
+            src="assets/img/damith-portfolio.png"
+            style="width: 100px;filter: contrast(0.2)"
+            class="site-logo"
+          />
       </a>
       <button
         aria-controls="navigation-index"
@@ -35,7 +38,9 @@
     >
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a> BLK• </a></div>
+          <div class="col-6 collapse-brand">
+            <!-- <a> Damith </a> -->
+          </div>
           <div class="col-6 collapse-close text-right">
             <button
               aria-controls="navigation-index"
@@ -55,40 +60,40 @@
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://twitter.com/CreativeTim"
+            href="https://medium.com/@damith123alahapperuma"
             placement="bottom"
             target="_blank"
-            tooltip="Follow us on Twitter"
+            tooltip="Follow me on Medium"
           >
-            <i class="fab fa-twitter"> </i>
-            <p class="d-lg-none d-xl-none">Twitter</p>
+            <i class="fab fa-medium"> </i>
+            <p class="d-lg-none d-xl-none">Medium</p>
           </a>
         </li>
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://www.facebook.com/CreativeTim"
+            href="https://www.linkedin.com/in/damith-alahapperuma/"
             placement="bottom"
             target="_blank"
-            tooltip="Like us on Facebook"
+            tooltip="Like me on LinkedIn"
           >
-            <i class="fab fa-facebook-square"> </i>
-            <p class="d-lg-none d-xl-none">Facebook</p>
+            <i class="fab fa-linkedin"> </i>
+            <p class="d-lg-none d-xl-none">Linkedin</p>
           </a>
         </li>
         <li class="nav-item p-0">
           <a
             class="nav-link"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://www.behance.net/damithalahapperuma"
             placement="bottom"
             target="_blank"
-            tooltip="Follow us on Instagram"
+            tooltip="Follow me on Behance"
           >
-            <i class="fab fa-instagram"> </i>
-            <p class="d-lg-none d-xl-none">Instagram</p>
+            <i class="fab fa-behance"> </i>
+            <p class="d-lg-none d-xl-none">Behance</p>
           </a>
         </li>
-        <li class="dropdown nav-item" dropdown>
+        <!-- <li class="dropdown nav-item" dropdown>
           <a
             class="dropdown-toggle nav-link dropdown-toggle"
             data-toggle="dropdown"
@@ -114,14 +119,14 @@
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
           </div>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a
             class="nav-link btn btn-default d-none d-lg-block"
             href="javascript:void(0)"
-            (click)="scrollToDownload(target)"
+           
           >
-            <i class="tim-icons icon-cloud-download-93"> </i> Download
+            <i class="tim-icons icon-cloud-download-93"> </i> Download Resume
           </a>
         </li>
       </ul>
@@ -137,18 +142,66 @@
     <div class="squares square5"></div>
     <div class="squares square6"></div>
     <div class="squares square7"></div>
-    <div class="container">
-      <div class="content-center brand">
-        <h1 class="h1-seo">BLK•</h1>
-        <h3>
-          A beautiful Design System for Bootstrap 4 and Angular. It's Free and
-          Open Source.
-        </h3>
+    <div class="container container-mobile">
+      <div class="content-center brand brand-photo" style="top: 50%; left: 25%; text-align: end;">
+        <img
+            alt="Rounded image"
+            class="img-fluid rounded shadow my-image"
+            src="assets/img/me.jpg"
+            style="width: 300px; filter: contrast(0.8); box-shadow: none;"
+          />
+          
+      <img
+      class="notfoundimage"
+      src="assets/img/my-damn-glasses.png"
+      style="width: 200px;
+      position: absolute;
+      right: 11%;
+      top: 22%;
+      transform: rotate(2deg);"
+    />
+      </div>
+      <div class="content-center brand brand-name" style="top:60%; left: 75%; text-align: start;">
+        <h1 class="h1-seo">Damith Alahapperuma</h1>
+        <!-- <h3>
+          UI/UX Designer <br/>
+          UI/UX Developer <br/>
+          UI/UX Researcher <br/>
+        </h3> -->
+
+        <div class="content-slider" style="display: flex;">
+          <div class="slider slider-front" style="width: 115px;">
+            <div class="quote">I am </div>
+          </div>
+          <div class="slider">
+            <div class="mask">
+              <ul>
+                <li class="anim1">
+                  <div class="quote">a UX <span class="highlight-yellow">Designer</span></div>
+                </li>
+                <li class="anim2">
+                  <div class="quote">a UX <span class="highlight-yellow">Researcher</span></div>
+                </li>
+                <li class="anim3">
+                  <div class="quote">also good at <span class="highlight-yellow">coding objects</span></div>
+                </li>
+                <li class="anim4">
+                  <div class="quote">a good <span class="highlight-yellow">team player</span> and,</div>
+                </li>
+                <li class="anim5">
+                  <div class="quote">from <span class="highlight-yellow">Sri Lanka ♥</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
   <div class="main">
-    <div class="section section-basic" id="basic-elements">
+    <!-- <div class="section section-basic" id="basic-elements">
       <img class="path" src="assets/img/path1.png" />
 
       <div class="container">
@@ -404,8 +457,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section section-navbars">
+    </div> -->
+    <!-- <div class="section section-navbars">
       <img class="path" src="assets/img/path3.png" />
 
       <div class="container" id="menu-dropdown">
@@ -840,8 +893,8 @@
           </nav>
         </div>
       </div>
-    </div>
-    <div class="section section-tabs">
+    </div> -->
+    <!-- <div class="section section-tabs">
       <div class="container">
         <div class="title"><h3 class="mb-3">Navigation Tabs</h3></div>
         <div class="row">
@@ -952,8 +1005,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section section-pagination">
+    </div> -->
+    <!-- <div class="section section-pagination">
       <img class="path" src="assets/img/path4.png" />
 
       <img class="path path1" src="assets/img/path5.png" />
@@ -1028,8 +1081,8 @@
         </div>
         <br />
       </div>
-    </div>
-    <div class="section section-notifications" id="notifications">
+    </div> -->
+    <!-- <div class="section section-notifications" id="notifications">
       <div class="container">
         <div class="space"></div>
         <h3>Notifications</h3>
@@ -1089,8 +1142,9 @@
           </span>
         </alert>
       </div>
-    </div>
-    <div class="section section-typo">
+    </div> -->
+    
+    <!-- <div class="section section-typo">
       <img class="path" src="assets/img/path1.png" />
 
       <img class="path path1" src="assets/img/path3.png" />
@@ -1246,8 +1300,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section section-javascript" id="javascriptComponents">
+    </div> -->
+    
+    <!-- <div class="section section-javascript" id="javascriptComponents">
       <img class="path" src="assets/img/path5.png" />
 
       <img class="path path1" src="assets/img/path5.png" />
@@ -1447,8 +1502,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section section-nucleo-icons">
+    </div> -->
+    
+    <!-- <div class="section section-nucleo-icons">
       <img class="path" src="assets/img/path3.png" />
 
       <div class="container">
@@ -1506,8 +1562,9 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class="section section-signup">
+    </div> -->
+    
+    <!-- <div class="section section-signup">
       <div class="container">
         <div class="squares square-1"></div>
         <div class="squares square-2"></div>
@@ -1603,8 +1660,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section section-examples" data-background-color="black">
+    </div> -->
+    
+    <!-- <div class="section section-examples" data-background-color="black">
       <img class="path" src="assets/img/path1.png" />
 
       <div class="space-50"></div>
@@ -1642,8 +1700,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section section-download" data-background-color="black" #target>
+    </div> -->
+    
+    <!-- <div class="section section-download" data-background-color="black" #target>
       <img class="path" src="assets/img/path1.png" />
 
       <div class="container">
@@ -1711,8 +1770,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </div> -->
+    
+    <!-- <div
       aria-hidden="true"
       aria-labelledby="myModalLabel"
       bsModal
@@ -1760,8 +1820,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </div> -->
+    
+    <!-- <div
       aria-hidden="true"
       aria-labelledby="myModalLabel"
       bsModal
@@ -1803,8 +1864,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </div> -->
+    <!-- <div
       aria-hidden="true"
       aria-labelledby="myModalLabel"
       bsModal
@@ -1904,14 +1965,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3"><h1 class="title">BLK•</h1></div>
+        <div class="col-md-12"><h1 class="title">Site Under Construction :'( </h1></div>
         <div class="col-md-3">
-          <ul class="nav">
+          <!-- <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" [routerLink]="['/home']"> Home </a>
             </li>
@@ -1924,10 +1985,10 @@
             <li class="nav-item">
               <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
         <div class="col-md-3">
-          <ul class="nav">
+          <!-- <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" href="https://creative-tim.com/contact-us?ref=blkdsa-footer">
                 Contact Us
@@ -1948,11 +2009,11 @@
                 License
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
         <div class="col-md-3">
-          <h3 class="title">Follow us:</h3>
-          <div class="btn-wrapper profile">
+          <!-- <h3 class="title">Follow us:</h3> -->
+          <!-- <div class="btn-wrapper profile">
             <a
               class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
               href="https://twitter.com/creativetim"
@@ -1974,7 +2035,7 @@
             >
               <i class="fab fa-dribbble"> </i>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
