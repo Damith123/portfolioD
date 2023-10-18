@@ -35,6 +35,49 @@
   .container {
     z-index: 2;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+      &.container-mobile {
+        .brand.brand-photo {
+          top: 50% !important;
+          left: 50% !important;
+          width: max-content;
+          filter: blur(4px);
+
+          .my-image {
+            height: auto;
+            width: fit-content !important;
+          }
+          .notfoundimage {
+            height: 450px;
+            width: auto !important;
+            right: 10% !important;
+            top: 16% !important;
+          }
+        }
+        .brand.brand-name {
+          top: 75% !important;
+          left: 50% !important;
+          text-align: start;
+          width: 100%;
+          font-size: 8px;
+          h1, .quote {
+            color: white !important;
+            padding: 10px;
+          }
+          h1 {
+            background: #3a3a3a2b;
+          }
+          .quote {
+            font-size: 32px !important;
+          }
+          .slider-front {
+            width: 180px !important;
+          }
+        }
+      }
+    }
+
   }
 }
 .clear-filter {

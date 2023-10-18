@@ -19,11 +19,15 @@
   .navbar-nav {
     .nav-item .nav-link {
       position: relative;
-      color: inherit;
+      color: $font-primary;
       line-height: 20px;
       display: inline-flex;
       &:hover {
-        color: $opacity-8;
+        color: #3a3a3a;
+      }
+
+      @media screen and (max-width: 768px) {
+        color: #cfcfcf !important;
       }
     }
   }
@@ -52,6 +56,12 @@
   &.navbar-transparent {
     background: $transparent-bg !important;
     padding-top: 25px;
+
+    @media screen and (max-width: 768px) {
+      .site-logo {
+        filter: drop-shadow(2px 2px 5px #3a3a3a) !important;
+      }
+    }
   }
 
   &.bg-white {
@@ -110,14 +120,14 @@
   }
 
   &.bg-danger {
-    background-color: $danger !important;
+    background-color: $light-grey !important;
   }
 
   .navbar-brand {
     position: relative;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
-    color: $white;
+    color: $font-primary;
     text-transform: capitalize;
     font-size: $font-paragraph;
     span {
@@ -128,6 +138,12 @@
   .navbar-toggle button:focus,
   .navbar-toggler {
     outline: none;
+
+    @media screen and (max-width: 991px) {
+      span {
+        background: #0a0a0a6b;
+      }
+    }
   }
 }
 
@@ -194,6 +210,9 @@
       &.collapsing,
       &.collapse {
         animation: show_navbar_collapse 0.2s ease forwards;
+        &.show {
+          background: #0a0a0a6b;
+        }
       }
 
       &.collapsing-out {
@@ -216,6 +235,12 @@
           .navbar-toggler {
             color: $white;
             font-size: $font-size-xl;
+            // background-color: #0a0a0a6b ;
+            @media screen and (max-width: 991px) {
+                padding: 5px;
+                margin-right: -5px;
+                background: #888888;
+            }
           }
         }
       }
@@ -443,7 +468,8 @@
     left: 0;
     top: 0;
     margin: 0.7rem;
-    background: $card-black-background;
+    // background: $card-black-background;
+    background: #0a0a0a6b;
     border-radius: $border-radius-sm;
     padding: 1.4rem;
   }
